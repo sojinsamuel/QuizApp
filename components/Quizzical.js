@@ -98,6 +98,8 @@ export default function Quizzical(props) {
       btn.style.pointerEvents = "initial";
     });
     setNextQuiz((prevState) => !prevState);
+    document.body.scrollTop = 0; // for safari
+    document.documentElement.scrollTop = 0;
   }
 
   let score = 0;
