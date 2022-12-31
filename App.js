@@ -15,7 +15,7 @@ function App() {
         setApiData(data.results);
         setIsLoading(false);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {});
   }, [nextQuiz]);
 
   return (
